@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {background-color: #ccc !important;}
+
+.segmentButton {
+    margin: 0;
+    flex: 1 1 auto;
+    text-align: center;
+ }
+ .btn-group>.btn-group:not(:last-child)>.segmentButton, .btn-group>.segmentButton:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+ }
+ .btn-group>.btn-group:not(:first-child)>.segmentButton, .btn-group>.segmentButton:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+ }

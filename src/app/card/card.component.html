@@ -1,0 +1,7 @@
+
+<div class="card">
+    <img src="assets/graphics/{{person.image}}" [width]="person.width">
+     <div *ngIf="person.width >= 160" style="font-size: 16px;"><b>{{person.name}}</b></div>
+    <div *ngIf="person.width < 160" style="font-size: 13px;"><b>{{person.name}}</b></div>
+    <div *ngIf="person.position" style="font-size: 11px;">{{person.position}}</div>
+</div>
