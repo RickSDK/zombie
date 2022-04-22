@@ -2,22 +2,10 @@
 
     <img src="assets/graphics/topBanner.png" style="width: 100%;">
 
+    <div>Official Traler:</div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cU9vf64SPi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>Initial Trailer:</div>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GHZoR80cQ9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    <div class="sectionTile">
-        <h3>Zombiegeddon Film</h3>
-        <p>Hi! We are a group of highly skilled, highly motivated Seattle based film makers and actors, working hard to
-            create an entertaining horror/comedy zombie movie using local talent.</p>
-        <p>
-            This movie is going to have it all! Scary scenes, comedy, romance, drama, mystery, action and of course,
-            above all else... zombies!
-        </p>
-        <p>
-            Help us support this mission by contributing to this project. Our goal is to showcase the talents of the
-            local Seattle film industry and create an awesome movie that is fun to watch and rewarding for all those
-            involved.
-        </p>
-    </div>
 
     <div class="sectionTile">
         <h3>Film Synopsis</h3>
@@ -37,32 +25,12 @@
 
     <div>
         <h3>Cast</h3>
-        <div>Check out this fantastic group of local actors. This film is going to be awesome!</div>
         <app-card *ngFor="let person of cast" [person]="person"></app-card>
     </div>
     <hr>
     <div>
         <h3>Crew</h3>
-        <div>We have an amazing crew of very talented people.</div>
         <app-card *ngFor="let person of crew" [person]="person"></app-card>
-    </div>
-    <hr>
-    <div class="sectionTile">
-        <h3>Fundraising</h3>
-        <p>
-            Our goal is to raise an additional $20,000 to make this film rock. See our indieGogo and kickstarter
-            campaigns for details.
-            Any help is greatly appreciated!
-        </p>
-    </div>
-
-    <div class="sectionTile">
-        <h3>Casting</h3>
-        <p>
-            Are you a local actor or actress who would like to appear in the film? Or even just want to be made up to be
-            a zombie and appear as an extra?
-            Contact us to see how you can get involved.
-        </p>
     </div>
 
     <div style="padding: 10px;">
@@ -71,29 +39,18 @@
                     class="fa fa-envelope"></i> Contact
             </button></a>
 
-        <a href="https://www.facebook.com/groups/308644537328075">
-            <button type="button" class="btn btn-primary roundButton" [ngStyle]="ngStyleSegment(0,1)"> <i
-                    class="fa fa-facebook"></i> Facebook Group
-            </button>
-        </a>
+            <a href="https://www.facebook.com/groups/308644537328075">
+                <button type="button" class="btn btn-primary roundButton" [ngStyle]="ngStyleSegment(0,1)"> <i
+                        class="fa fa-facebook"></i> Facebook Group
+                </button>
+            </a>
+            <a href="https://www.imdb.com/title/tt14397440/">
+                <button type="button" class="btn btn-primary roundButton" [ngStyle]="ngStyleSegment(0,1)"> <i
+                        class="fa fa-imdb"></i> IMDb Page
+                </button>
+            </a>
+        
 
-        <a href="https://www.indiegogo.com/projects/seattle-indie-movie-zombiegeddon/x/26149210#/">
-            <button type="button" class="btn btn-primary roundButton" [ngStyle]="ngStyleSegment(0,1)"> <i
-                    class="fa fa-ticket"></i> IndieGogo
-            </button>
-        </a>
-
-        <a href="https://www.kickstarter.com/projects/zombiegeddon/film-zombiegeddon">
-            <button type="button" class="btn btn-primary roundButton" [ngStyle]="ngStyleSegment(0,1)"> <i
-                    class="fa fa-check"></i> Kickstarter
-            </button>
-        </a>
-
-        <a href="https://www.imdb.com/title/tt14397440/">
-            <button type="button" class="btn btn-primary roundButton" [ngStyle]="ngStyleSegment(0,1)"> <i
-                    class="fa fa-imdb"></i> IMDb
-            </button>
-        </a>
 
     </div>
 
